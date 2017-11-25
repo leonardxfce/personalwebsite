@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html::-webkit-scrollbar {
+    width: 0px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+.centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.side{
+    width: 100%;
+    background: #111;
+    box-shadow: 0 0 20px;
+    margin-bottom: 2em;
+}
+.basic-info{
+    height: 100vh;
+    border-bottom: solid 2px #eee;
+}
+.basic-info img{
+    border-radius: 100%;
+    filter: grayscale(100%);
+    margin:2em;
+}
+.basic-info h1{
+    margin: 0;
+    color: #eee;
+    font-size: 3.5em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 90%;
+}
+.basic-info h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #aaa;
+    font-size: .9em;
+    margin-top: 1em;
+    letter-spacing: 1px;
+}
+.contacto h3{
+    display: none;
+}
+.skills{
+    height: 100vh;
+}
+.skills h2{
+    color: #eee;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills h3{
+    color: white;
+}
+progress{
+    -webkit-appearance: none;
+    appearance: none;
+    margin-bottom:1em;
+    width: 75vw;
+    height: 1.5em;
+
+}
+progress[value]::-webkit-progress-bar {
+
+}
+progress[value="5"]::-webkit-progress-value {
+    background-color: green;
+}
+progress[value="4"]::-webkit-progress-value {
+    background-color: indigo;
+}
+progress[value="3"]::-webkit-progress-value {
+    background-color: #DD5722;
+}
+progress[value="2"]::-webkit-progress-value {
+    background-color: yellow;
+}
+.experiencia h2{
+    display:block;
+}
+.contacto{
+    width: 290px;
+}
+.contacto ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.fa{
+    font-size:1.5em;
+    filter: invert(90%);
+}
+a:visited{
+    color: black;
+}
+a{
+    color: black
+}
+.siteD{
+    width: 70%;
+    border:solid 2px black;
+}
+.siteM{
+    height: 10vh;
+    border:solid 2px black;
+}
+.main {
+    margin: 1em 0;
+}
+.main h2{
+    display: none;
+}
