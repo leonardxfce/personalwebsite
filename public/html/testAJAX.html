@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entrada al Sistema</title>
+</head>
+<body>
+	<h1>Ingrese sus datos</h1>
+	<form method="POST" action="control.php">
+		<label>Nombre de Usuario</label>
+		<input type="text" name="user" id="user" onkeyup="comprobar()">
+		<label>Contraseña</label>
+		<input type="text" name="password" id="password">
+		<input type="submit" name="Entrar">
+	</form>
+	<br>
+	<button onclick="comprobar()">Comprobar por AJAX</button>
+	<h2 id="demo"></h2>
+	<button onclick="cargar()">+</button>
+	<button onclick="borrar()">-</button>
+</body>
+<script type="text/javascript" src="ajax.js"></script>
+</html>
