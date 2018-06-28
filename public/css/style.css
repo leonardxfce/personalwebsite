@@ -13,15 +13,11 @@ body{
     align-items: center;
     justify-content: center;
 }
-.side{
+.basic-info{
     width: 100%;
     background: #111;
     box-shadow: 0 0 20px;
-    margin-bottom: 2em;
-}
-.basic-info{
     height: 100vh;
-    border-bottom: solid 2px #eee;
 }
 .basic-info img{
     border-radius: 100%;
@@ -45,6 +41,10 @@ body{
     margin-top: 1em;
     letter-spacing: 1px;
 }
+.nombres{
+    text-align: center;
+}
+
 .contacto h3{
     display: none;
 }
@@ -104,6 +104,7 @@ a:visited{
     color: black;
 }
 a{
+    text-decoration: none;
     color: black
 }
 .siteD{
@@ -119,4 +120,10 @@ a{
 }
 .main h2{
     display: none;
+}
+.blog{
+    text-align: center;
+}
+a:visited{
+    color: white;
 }
