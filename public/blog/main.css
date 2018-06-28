@@ -15,3 +15,15 @@
     color: whitesmoke;
     text-decoration: none;
 }
+
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#volver{
+    border: none;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+}
