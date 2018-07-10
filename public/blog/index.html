@@ -16,9 +16,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:image" content="https://leonardoaraoz.com/img/og-image.jpg">
@@ -32,26 +29,26 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Programador Web y Docente. El saber no ocupa lugar pero si kilobytes. Aquí encontraras mi experiencia en formato CV y Blog.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.1/markdown-it.min.js"></script>
     <script src="index.js"></script>
 </head>
-
 <body>
-    <div id="menu">
-        <h1 id="cabeza">
-            <a href="../">Leonardo Araoz - Blog</a>
-        </h1>
-    </div>
     <div class="container">
-        <h2>Articulos</h2>
-        <ul>
-            <li data-url="clase2.md">Clases IES - Clase 2</li>
-        </ul>
-    </div>
-    <div class="back">
-        <button id="volver">Volver</button>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="../">Leonardo Araoz - Blog</a>
+            <button class="btn btn-success" id="volver" >Volver</button>
+        </nav>
+    <div class="row m-3">
+        <div class="col" id="contenido">
+            <h1>Articulos</h1>
+            <ul class="list-group">
+                <li class="list-group-item" data-url="clase2.md">Clases IES - Clase 2</li>
+                         <li class="list-group-item" data-url="save-testing-php.md">Save on Test PHPUnit</li>
+            </ul>
+        </div>
     </div>
 </body>
-
 </html>
