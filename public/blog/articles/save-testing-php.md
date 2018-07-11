@@ -2,7 +2,7 @@
 
 Estoy comenzando, en el mundo del testing. Mi primer experiencia fue realizando test con [Jest](https://jestjs.io/es-ES/) en VSCode. Previamente lei, un poco sobre TDD, por ejemplo de las ideas que expone Carlos Blé. Adicional a esto tambien me tome mi tiempo para aprender a usar NPM y tambien ha abrir la consola en VSCode.
 
-El mundo de JS, es un mundo muy actual donde casi todo se puede hacer en tiempo real (el verbo conocido para esto es `--watch`), por lo cual luego de un para de `npm instal zaraza` ya tenia instalado jest y con un par de clicks mas ya tenia los comandos basicos para hacer un flujo de testing rapido, de la misma forma que con `live-server` nos puede ayudar a trabajar mas rapido con HTML y CSS.
+El mundo de JS, es un mundo muy actual donde casi todo se puede hacer en tiempo real (el verbo conocido para esto es `--watch`), por lo cual luego de un par de `npm instal zaraza` ya tenia instalado jest y con un par de clicks mas ya tenia los comandos basicos para hacer un flujo de testing rapido, de la misma forma que con `live-server` nos puede ayudar a trabajar mas rapido con HTML y CSS.
 
 El lenguaje de programacion al que mas le tengo cariño es, el viejo y querido, __PHP__. En este lenguaje comenzé mis primeras andanzas, ohh aquellos viejos tiempos con Wordpress y los cambios __en vivo__ en el servidor.. (da para otro blogpost completo).
 
@@ -19,6 +19,7 @@ Entonces con todos los ingredientes listos intenté armar el truco.
 Primero cree una carpeta para albergar el proyecto.
 ```
 mkdir pepito
+cd pepito
 ```
 Luego, me dispuse a crear un proyecto de composer (Aya! aca quiza pierda a muchos que no manejan a __composer__. [Aca, opcion 3](https://www.hostinger.com.ar/tutoriales/como-instalar-composer/#Paso-1-Instalar-Composer))
 
