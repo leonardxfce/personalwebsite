@@ -17,22 +17,24 @@ En **npm** existe... _bah, que no existe ahi!!_ , existe un paquete que proporci
 Entonces con todos los ingredientes listos intenté armar el truco.
 
 Primero cree una carpeta para albergar el proyecto.
-
-	`mkdir pepito`
-
+```
+mkdir pepito
+```
 Luego, me dispuse a crear un proyecto de composer (Aya! aca quiza pierda a muchos que no manejan a __composer__. [Aca, opcion 3](https://www.hostinger.com.ar/tutoriales/como-instalar-composer/#Paso-1-Instalar-Composer))
 
-`composer init`  
-`composer require --dev phpunit/phpunit`
-
+```bash
+composer init  
+composer require --dev phpunit/phpunit
+```
 Cree mi carpeta de `test/`
-
-`mkdir test`
-
+```
+mkdir test
+```
 Cree mi codigo de testing de ejemplo
-
-`touch test/EjemploTest.php`
-```php
+```
+touch test/EjemploTest.php
+```
+```
 <?php
 
 use PHPUnit\Framework\TestCase;
@@ -49,30 +51,29 @@ class EjemploTest extends TestCase
 ```
 Luego definí en mi `packge.json`
 
-```json
+```
     "scripts": {
         "test": " ./vendor/bin/phpunit test/"
     }
 ```
 Hasta aca nada fuera de lo común, luego aca donde empieza el engendro, me dispuse a iniciar un proyecto **npm**. Igual que recien [Aca te enseñan a instalarlo](https://nodejs.org/es/download/package-manager/#windows) , de paso lo enseñan a hacer con __chocolatey__ , una joyita.
 
-`npm init`  
-
+```
+npm init
+```
 Y instalé la dependencia _run-when-changed_
-
-`npm i run-when-changed`
-
+```
+npm i run-when-changed
+```
 Por ultimo en la parte de `scripts` puse lo siguiente
-
-```json
+```
 "scripts": {
     "test": "run-when-changed --watch '**/*.php' --exec 'composer test'"
   },
 ```
-
 Esto ultimo, aunque medio criptico, mira los cambios en los archivos que terminen en .php y ejecuta un comando en consecuencia.
 
-* `run-when-changed --wacth` es el comando basico para 'wacthear' archivos
+* `run-when-changed --watch` es el comando basico para 'wacthear' archivos
 
 * `'**/*.php'` es un patron **glob** para filtrar solo los archivos .php
 * `--exec 'composer test'` si prestaste antecion anteriomente al script que escribi en el packge.json hice un comando que se llama test, `--exec` llama al siguiente comando que escribas en este caso `composer test`

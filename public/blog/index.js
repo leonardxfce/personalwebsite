@@ -13,6 +13,9 @@ class Indice {
         const result = md.render(data);
         this.$contenedor.html(result);
         $("#contenido img").addClass("img-fluid");
+        $('pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
     }
     cargarArticulo(e) {
         const url = $(e.currentTarget).data("url");
@@ -24,7 +27,7 @@ class Indice {
         };
         $.ajax(config).done(this.pegarEnBody);
         const nombre = url.slice(0,url.length - 3);
-        this.route(nombre);
+        //this.route(nombre);
     }
     route(ruta){
         history.pushState({}, ruta , ruta + ".html");
@@ -32,9 +35,9 @@ class Indice {
     bindEventos() {
         $('#contenido').on('click','li',this.cargarArticulo);
         $("button").on("click", this.volverAlIndice);
-        $("li:nth-child(2)").trigger("click");
         this.$contenedor = $("#contenido");
         this.container = this.$contenedor.html();
+        $("li:nth-child(2)").trigger("click");
     }
     volverAlIndice() {
         this.$contenedor.html(this.container);
